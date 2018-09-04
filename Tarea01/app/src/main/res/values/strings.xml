@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tarea01</string>
+    <string name="name_hint">Ingrese su nombre</string>
+    <string name="phone_hint">Ingrese su teléfono</string>
+    <string name="pupillage_text">Escolaridad</string>
+    <string name="gender_text">Género</string>
+    <string name="radio_fem">Femenino</string>
+    <string name="radio_mas">Masculino</string>
+    <string name="fave_book_text">Libro Favorito</string>
+    <string name="check_text">Practica Deporte</string>
+    <string name="button_clean">Limpiar</string>
+    <string name="alert_clean">¿Desea limpiar los campos?</string>
+    <string name="save_menu">Guardar</string>
+
+    <string-array name="grade_array">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string-array name="book_array">
+        <item>El Psicoanalista</item>
+        <item>Las Mujeres de la NASA</item>
+        <item>Skullduggery Pleasant</item>
+        <item>El Principito</item>
+        <item>El Guardián en el Centeno</item>
+    </string-array>
+
+
+</resources>

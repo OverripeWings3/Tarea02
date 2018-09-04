@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="subtitle_text_size">20sp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="radio_margin">100dp</dimen>
+    <dimen name="three_text_size">20sp</dimen>
+
+</resources>

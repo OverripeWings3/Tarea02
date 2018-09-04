@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_margin">
+
+    <EditText
+        android:id="@+id/activity_main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/activity_main_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pupillage_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/subtitle_text_size"/>
+
+    <Spinner
+        android:id="@+id/activity_main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_text"
+        android:textSize="@dimen/subtitle_text_size"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/activity_main_fem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_fem"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/activity_main_mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_mas"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="@dimen/radio_margin"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subtitle_text_size"
+        android:text="@string/fave_book_text"
+        android:textColor="@android:color/black" />
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_main_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/activity_main_checkbox"
+        android:layout_width="wrap_content"
+        android:gravity="top"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/check_text"
+        android:onClick="onCheckBoxClicked"/>
+
+    <Button
+        android:id="@+id/activity_main_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_clean"
+        android:gravity="center"
+        android:onClick="save"/>
+
+
+
+</LinearLayout>
