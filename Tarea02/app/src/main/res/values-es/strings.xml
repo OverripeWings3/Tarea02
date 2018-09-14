@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ExamTest</string>
+    <string name="vintage_bike">VINTAGE BICYCLE</string>
+    <string name="color_bike">COLOR</string>
+    <string name="description_label">DESCRIPCIÓN</string>
+    <string name="description_text">
+        Bastidor de acero ligero personalizado.
+        Sin restaurar en hermosas condiciones. Ligeramente usado y bien
+        mantenido. Completa creación de súper registro.
+    </string>
+    <string name="lorem_label">MEDIDA</string>
+    <string name="lorem_text">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.</string>
+    <string name="add_cart">AÑADIR AL CARRITO</string>
+    <string name="added_cart">AÑADIDO AL CARRITO</string>
+    <string name="size_s">S</string>
+    <string name="size_m">M</string>
+    <string name="size_l">L</string>
+    <string name="size_xl">XL</string>
+    <string name="like_toast">+1 A Vintage Bicycle</string>
+
+</resources>

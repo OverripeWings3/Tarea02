@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bike" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/master_margin">
+            <TextView
+                android:id="@+id/activity_main_bike_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/master_margin"
+                android:text="@string/vintage_bike"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_size"/>
+
+            <ImageButton
+                android:id="@+id/activity_main_like"
+                android:layout_width="@dimen/like_button_w"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_height="@dimen/like_button_h"
+                android:src="@drawable/like"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_main_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/master_margin">
+
+            <TextView
+                android:id="@+id/activity_main_color_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color_bike"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_size"
+                />
+
+            <RadioGroup
+                android:id="@+id/activity_main_radio_group"
+                android:layout_below="@id/activity_main_color_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_main_color_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radioButtonGray"
+                    android:onClick="onRadioButtonOnClicked"/>
+                <RadioButton
+                    android:id="@+id/activity_main_color_pink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radioButtonPink"
+                    android:onClick="onRadioButtonOnClicked"/>
+                <RadioButton
+                    android:id="@+id/activity_main_color_brown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radioButtonBrown"
+                    android:onClick="onRadioButtonOnClicked"/>
+                <RadioButton
+                    android:id="@+id/activity_main_color_black"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/radioButtonBlack"
+                    android:onClick="onRadioButtonOnClicked"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/activity_main_medium"
+                android:layout_below="@id/activity_main_radio_group"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_m"
+                android:background="@drawable/size_button_behavior"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onSizeClicked"/>
+            <Button
+                android:id="@+id/activity_main_small"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/activity_main_medium"
+                android:layout_below="@id/activity_main_radio_group"
+                android:text="@string/size_s"
+                android:background="@drawable/size_button_behavior"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onSizeClicked"/>
+            <Button
+                android:id="@+id/activity_main_large"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/activity_main_small"
+                android:layout_below="@id/activity_main_radio_group"
+                android:text="@string/size_l"
+                android:background="@drawable/size_button_behavior"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onSizeClicked"/>
+            <Button
+                android:id="@+id/activity_main_extra_large"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/activity_main_large"
+                android:layout_below="@id/activity_main_radio_group"
+                android:text="@string/size_xl"
+                android:background="@drawable/size_button_behavior"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onSizeClicked"/>
+
+            <TextView
+                android:id="@+id/activity_main_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/master_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_size"
+                android:layout_below="@id/activity_main_medium"
+                android:text="@string/description_label"/>
+
+            <TextView
+                android:id="@+id/activity_main_description"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_below="@id/activity_main_description_label"
+                android:text="@string/description_text"/>
+
+            <TextView
+                android:id="@+id/activity_main_measurement_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/master_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/subtitle_size"
+                android:layout_below="@id/activity_main_description"
+                android:text="@string/lorem_label"/>
+
+            <TextView
+                android:id="@+id/activity_main_measurement"
+                android:layout_marginTop="@dimen/master_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_below="@id/activity_main_measurement_label"
+                android:text="@string/lorem_text"/>
+
+            <Button
+                android:id="@+id/activity_main_add_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_main_measurement"
+                android:text="@string/add_cart"
+                android:textColor="@android:color/white"
+                android:background="@drawable/add_cart_button_behavior"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

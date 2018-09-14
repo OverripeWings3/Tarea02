@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">30sp</dimen>
+    <dimen name="subtitle_size">20sp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="like_button_h">30sp</dimen>
+    <dimen name="like_button_w">23sp</dimen>
+    <dimen name="master_margin">15dp</dimen>
+</resources>
